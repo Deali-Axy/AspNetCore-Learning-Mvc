@@ -1,0 +1,19 @@
+﻿@model StatusCodeViewModel
+
+@{
+    ViewBag.Title = $"错误！{Model.Code}：{Model.Message}";
+}
+
+<h1 class="alert alert-danger">
+    @Model.Message
+</h1>
+
+
+<div class="list-group">
+    <div class="list-group-item list-group-item-danger">
+        @Model.Path
+    </div>
+    <div class="list-group-item list-group-item-danger">
+        @Model.QueryString
+    </div>
+</div>

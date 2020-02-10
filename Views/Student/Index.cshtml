@@ -1,0 +1,44 @@
+﻿@model IEnumerable<StudyManagement.Models.Student>
+
+@{
+    ViewBag.Title = "首页 学生列表";
+}
+
+
+<div class="card-group mb-3">
+    @foreach (var student in Model)
+    {
+        var photoSrc = student.PhotoPath == null ? "~/images/nophoto.jpg" : $"~/uploads/images/{student.PhotoPath}";
+
+        <div class="card">
+            <img src="@photoSrc" class="card-img-top image-thumbnail" asp-append-version="true">
+            <div class="card-body">
+                <h5 class="card-title">@student.Name</h5>
+                <p class="card-text">编号：@student.Id</p>
+                <p class="card-text">班级：@student.ClassName</p>
+                <p class="card-text">@student.Email</p>
+            </div>
+            <div class="card-footer">
+                <div class="row">
+                    <div class="col">
+                        <a class="btn btn-primary" asp-controller="student" asp-action="details" asp-route-id="@student.Id">查看</a>
+                    </div>
+                    <div class="col">
+                        <a class="btn btn-primary" asp-controller="student" asp-action="edit" asp-route-id="@student.Id">编辑</a>
+                    </div>
+                    <div class="col">
+                        <a class="btn btn-danger" asp-controller="student" asp-action="details" asp-route-id="@student.Id">删除</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+
+@section Scripts{
+    <script>
+        document.write("");
+    </script>
+}
+

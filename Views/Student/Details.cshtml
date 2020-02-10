@@ -1,0 +1,29 @@
+﻿@model StudyManagement.ViewModels.StudentDetailsViewModel
+@{
+    ViewBag.Title = "学生详情";
+    var photoSrc = Model.Student.PhotoPath == null ? "~/images/nophoto.jpg" : $"~/uploads/images/{Model.Student.PhotoPath}";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@{
+    var student = ViewData["model"] as StudyManagement.Models.Student;
+}
+
+<div>姓名：@student.Name</div>
+<div>班级：@student.ClassName</div>
+
+<h1>@ViewBag.PageTitle</h1>
+
+<div>姓名：@ViewBag.Student.Name</div>
+<div>班级：@ViewBag.Student.ClassName</div>
+
+<h1>强类型模型</h1>
+<h2>@Model.PageTitle</h2>
+<img src="@photoSrc" alt="Alternate Text" asp-append-version="true" />
+<ul>
+    <li>@Model.Student.Id</li>
+    <li>@Model.Student.Name</li>
+    <li>@Model.Student.ClassName</li>
+    <li>@Model.Student.Email</li>
+</ul>

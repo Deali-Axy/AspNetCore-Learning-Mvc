@@ -854,6 +854,11 @@ public class SqlStudentRepository : IStudentRepository
 - Add-Migration：添加迁移记录
 - Update-Database：更新数据库
 
+使用dotnet cli的话请先安装：dotnet tool install --global dotnet-ef   
+
+- dotnet ef migrations add initial: 添加迁移记录
+- dotnet ef database update: 更新数据库
+
 ### 添加种子数据
 
 重写`DbContext`的`OnModelCreating`方法

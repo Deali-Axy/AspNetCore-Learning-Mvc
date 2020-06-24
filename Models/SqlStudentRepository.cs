@@ -14,8 +14,7 @@ namespace StudyManagement.Models
         {
             _context = context;
         }
-
-
+        
         public Student Add(Student student)
         {
             _context.Students.Add(student);
@@ -31,7 +30,6 @@ namespace StudyManagement.Models
                 _context.SaveChanges();
             }
             return student;
-
         }
         public IEnumerable<Student> GetAll() => _context.Students;
         public Student GetById(int id) => _context.Students.Find(id);

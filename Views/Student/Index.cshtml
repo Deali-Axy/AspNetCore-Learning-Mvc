@@ -4,35 +4,34 @@
     ViewBag.Title = "首页 学生列表";
 }
 
+<div class="container">
+    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-6 mt-3">
+        <!-- 开始一个卡片 -->
+        @foreach (var student in Model) {
+            var photoSrc = student.PhotoPath == null ? "~/images/nophoto.jpg" : $"~/uploads/images/{student.PhotoPath}";
 
-<div class="card-group mb-3">
-    @foreach (var student in Model)
-    {
-        var photoSrc = student.PhotoPath == null ? "~/images/nophoto.jpg" : $"~/uploads/images/{student.PhotoPath}";
-
-        <div class="card">
-            <img src="@photoSrc" class="card-img-top image-thumbnail" asp-append-version="true">
-            <div class="card-body">
-                <h5 class="card-title">@student.Name</h5>
-                <p class="card-text">编号：@student.Id</p>
-                <p class="card-text">班级：@student.ClassName</p>
-                <p class="card-text">@student.Email</p>
-            </div>
-            <div class="card-footer">
-                <div class="row">
-                    <div class="col">
-                        <a class="btn btn-primary" asp-controller="student" asp-action="details" asp-route-id="@student.Id">查看</a>
+            <div class="col mb-3 px-1">
+                <div class="card h-100 bg-light">
+                    <a asp-controller="Student" asp-action="Details">
+                        <img src="@photoSrc" asp-append-version="true" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body px-2 pb-2">
+                        <h6 class="card-title my-n2">@student.Name</h6>
+                        <div class="card-subtitle mb-1 mt-3 text-danger">
+                            <span class="text-muted">班级：@student.ClassName</span>
+                            <span class="text-muted">@student.Email</span>
+                            <span class="badge badge-danger ml-2">Id：@student.Id</span>
+                        </div>
                     </div>
-                    <div class="col">
-                        <a class="btn btn-primary" asp-controller="student" asp-action="edit" asp-route-id="@student.Id">编辑</a>
-                    </div>
-                    <div class="col">
-                        <a class="btn btn-danger" asp-controller="student" asp-action="details" asp-route-id="@student.Id">删除</a>
+                    <div class="card-footer">
+                        <a class="card-link" asp-controller="student" asp-action="edit" asp-route-id="@student.Id">编辑</a>
+                        <a class="card-link text-danger" asp-controller="student" asp-action="details" asp-route-id="@student.Id">删除</a>
                     </div>
                 </div>
             </div>
-        </div>
-    }
+        }
+        <!-- 结束一个卡片 -->
+    </div>
 </div>
 
 
@@ -41,4 +40,3 @@
         document.write("");
     </script>
 }
-

@@ -8,6 +8,10 @@ namespace StudyManagement.Models
 {
     public static class ModelBuilderExtensions
     {
+        /// <summary>
+        /// 插入种子数据
+        /// </summary>
+        /// <param name="modelBuilder"></param>
         public static void InsertSeedData(this ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Student>().HasData(

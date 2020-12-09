@@ -41,7 +41,7 @@ namespace StudyManagement {
                 var developerExceptionPageOptions = new DeveloperExceptionPageOptions();
                 // 显示代码行数
                 developerExceptionPageOptions.SourceCodeLineCount = 10;
-                app.UseDeveloperExceptionPage();
+                app.UseDeveloperExceptionPage(developerExceptionPageOptions);
             } else {
                 app.UseStatusCodePagesWithReExecute("/status-code/{0}");
                 app.UseExceptionHandler("/exception");

@@ -1234,3 +1234,37 @@ _logger.LogWarning(viewModel.ToString());
 },
 ```
 
+## 构建与部署
+
+发布：
+
+>参考：https://docs.microsoft.com/zh-cn/dotnet/core/tools/dotnet-publish
+
+```bash
+dotnet publish
+```
+
+构建不依赖DotNet Sdk的可执行项目：
+
+```bash
+dotnet publish -r <RID>
+```
+
+>其中，`RID`参考：https://docs.microsoft.com/zh-cn/dotnet/core/rid-catalog
+
+附上几个常用的吧：
+- Windows
+    - win-x86
+    - win-x64
+    - win-arm
+    - win-arm64
+- Linux
+    - linux-x64
+    - linux-arm
+    - linux-arm64
+
+更多选项
+```bash
+dotnet publish -p:PublishSingleFile=true -p:PublishTrimmed=true 
+```
+

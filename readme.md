@@ -1,4 +1,6 @@
 ﻿# Asp.Net Core 学习
+ 
+ 新项目，[使用AspNetCore开发的图书馆WebApi项目](https://github.com/Deali-Axy/AspNetCore-Learning)
 
 公众号 | 公众号 |
 ------- | ------ | 

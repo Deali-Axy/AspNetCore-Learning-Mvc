@@ -1,6 +1,6 @@
-﻿# Asp.Net Core 学习
+﻿# Asp.Net Core 学习之MVC
  
- 新项目，[使用AspNetCore开发的图书馆WebApi项目](https://github.com/Deali-Axy/AspNetCore-Learning)
+相关项目：[Asp.Net Core学习 WebApi版 图书馆管理系统](https://github.com/Deali-Axy/AspNetCore-Learning-WebApi)
 
 公众号 | 公众号 |
 ------- | ------ | 

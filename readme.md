@@ -1,5 +1,6 @@
 ﻿# Asp.Net Core 学习之MVC
- 
+
+新项目推荐：[使用 AspNetCore 开发博客](https://github.com/Deali-Axy/StarBlog)
 相关项目：[Asp.Net Core学习 WebApi版 图书馆管理系统](https://github.com/Deali-Axy/AspNetCore-Learning-WebApi)
 
 公众号 | 公众号 |
@@ -12,6 +13,10 @@ Asp.Net Core 学习笔记系列博客：
 - [Asp.Net Core学习笔记：（二）视图、模型、持久化、文件、错误处理、日志](https://zhuanlan.zhihu.com/p/105953794)
 - [Asp.Net Core学习笔记：（三）使用SignalR实时通信框架开发聊天室](https://zhuanlan.zhihu.com/p/106321863)
 - [Asp.Net Core学习笔记：（四）Blazor WebAssembly入门](https://zhuanlan.zhihu.com/p/107262924)
+- [Asp.Net Core学习笔记：（五）构建和部署](https://zhuanlan.zhihu.com/p/203298625)
+- [Asp-Net-Core开发笔记：接口返回json对象出现套娃递归问题](https://www.cnblogs.com/deali/p/15847475.html)
+- [Asp-Net-Core学习笔记：身份认证入门](https://www.cnblogs.com/deali/p/15851620.html)
+- [Asp-Net-Core开发笔记：使用NPM和gulp管理前端静态文件](https://www.cnblogs.com/deali/p/15905760.html)
 
 C#语言学习系列博客：
 
@@ -21,6 +26,7 @@ C#语言学习系列博客：
 
 相关博文推荐：
 
+- [跨平台框架AspNetCore开发实践杂谈](https://www.cnblogs.com/deali/p/13929132.html)
 - [花一周时间整理的六千字长文！深入思考技术本质，跨平台开发框架AspNetCore的简单实践杂谈](https://zhuanlan.zhihu.com/p/267938409)
 - [在.NET Core(C#)中使用EPPlus.Core导出Excel文档](https://zhuanlan.zhihu.com/p/261750807)
 - [NetCore爬虫：CatSpider# 开发笔记](https://zhuanlan.zhihu.com/p/106015789)

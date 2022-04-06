@@ -1,7 +1,8 @@
 ﻿# Asp.Net Core 学习之MVC
 
-新项目推荐：[使用 AspNetCore 开发博客](https://github.com/Deali-Axy/StarBlog)
 相关项目：[Asp.Net Core学习 WebApi版 图书馆管理系统](https://github.com/Deali-Axy/AspNetCore-Learning-WebApi)
+
+新项目推荐：[使用 AspNetCore 开发博客](https://github.com/Deali-Axy/StarBlog)
 
 公众号 | 公众号 |
 ------- | ------ | 
